@@ -1,19 +1,10 @@
-
-import java.util.List;
-import java.util.ArrayList;
-
 public class Generador {
 
-    // Genera un listado de tamaño size
-    // con números aleatorios de 0 a size
-    public static List<Integer> generate(int size) {
-
-        List<Integer> list = new ArrayList<>();
-
+    public static int[] generate(int size) {
+        int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
-            list.add((int) (Math.random() * size));
+            arr[i] = (int) (Math.random() * size);
         }
-
-        return list;
+        return arr;
     }
 }
